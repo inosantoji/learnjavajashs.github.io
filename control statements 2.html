@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>control statements</title>
+<link rel="stylesheet" href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="menu">
+<ul>
+
+<li class="active"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.html#"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/vision.html">Vision</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/mission.html">Mission</a></li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="#"><i class="fa fa-clone"></i>Lesson</a>
+<div class="sub-menu-1">  
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/introduction.html">Introduction</a></li>
+<li class="hover-me"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/fundamental.html">Fundamentals</a> <i class="fa fa-angle-right"></i>
+
+<div class="sub-menu-2">
+	<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">Control Statements</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/array.html">Array</a></li>
+
+</ul>
+</div>
+
+</li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/quiz.html"><i class="fa fa-edit"></i>Quiz</a>
+<div class="sub-menu-1">  
+
+</div></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/contact.html"><i class="fa fa-address-card-o"></i>Contact</a></li>
+</ul>
+</div>
+
+</style>
+
+</body>
+</html>
+<h2 class="h2"><center>Java For Loop vs While Loop vs Do While Loop</h2><br></center>
+<table id="alt">
+	  <tr class="header">
+	  	<h1>
+<tr>
+	<th>Comparison</th>
+	<th>for loop</th>
+	<th>while loop</th>
+	<th>do while loop</th>
+</tr>
+<tr>
+	<td>Introduction</td>
+	<td>&nbsp;The Java for loop is a control flow &nbsp;statement that iterates a part of the &nbsp;programs multiple times. </td>
+	<td>The Java while loop is a control flow statement that executes a part of the programs repeatedly on the basis of given boolean condition.</td>
+	<td>&nbsp;The Java do while loop is a control flow statement that executes a &nbsp;part of the programs at least once and the further execution depends &nbsp;upon the given boolean condition.</td>
+</tr>
+<tr>
+	<td>When to use</td>
+	<td>&nbsp;If the number of iteration is fixed, it is &nbsp;recommended to use for loop.</td>
+	<td>If the number of iteration is not fixed, it is recommended to use while loop.</td>
+	<td>If the number of iteration is not fixed and you must have to execute&nbsp; the loop at least once, it is recommended to use the do-while loop.</td>
+</tr>
+<tr>
+	<td>Syntax</td>
+	<td><pre>
+for(init;condition;incr/decr){  
+// code to be executed 
+}
+</pre></td>
+	<td><pre>
+while(condition){  
+//code to be executed 
+}
+</pre></td>
+	<td><pre>
+do{  
+//code to be executed  
+}while(condition); 
+</pre></td>
+</tr>
+<tr>
+	<td>Example</td>
+	<td><pre>
+//for loop  
+for(int i=1;i&lt;=10;i++){  
+System.out.println(i);  
+}  
+</pre></td>
+	<td><pre>
+//while loop  
+int i=1;  
+while(i&lt;=10){  
+System.out.println(i);  
+i++;  
+}  
+</pre></td>
+	<td><pre>
+//do-while loop  
+int i=1;  
+do{  
+System.out.println(i);  
+i++;  
+}while(i&lt;=10); 
+</pre></td>
+</tr>
+
+<tr>
+	<td>Syntax for infinitive loop</td>
+	<td><pre>
+for(;;){  
+//code to be executed  
+}
+</pre></td>
+	<td><pre>
+while(true){  
+//code to be executed  
+}
+</pre></td>
+	<td><pre>
+do{  
+//code to be executed  
+}while(true);  
+</pre></td>
+</tr>
+</table>
+</h1>
+</tr></table></h2>
+
+<h2><b><p style=" background: white; color: black; padding: 1px; margin-left: 20px; margin-top: 20px;margin-right: 20px;
+  ">Java Simple For Loop</b><br><br></p><br>
+
+A simple for loop is the same as C/C++. We can initialize the variable, check condition and increment/decrement value.<br> It consists of four parts:
+
+Initialization:<br> It is the initial condition which is executed once when the loop starts. <br>Here, we can initialize the variable, or we can use an already initialized variable. It is an optional condition.
+Condition:<br> It is the second condition which is executed each time to test the condition of the loop. It continues execution until the condition is false.<br> It must return boolean value either true or false. It is an optional condition.
+Statement:<br> The statement of the loop is executed each time until the second condition is false.
+Increment/Decrement: It increments or decrements the variable value. It is an optional condition. <br>
+
+
+
+<img src="file:///C:/Users/PC%20Boss/Pictures/forloop.png">
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class ForExample {  
+public static void main(String[] args) {  
+    //Code of Java for loop  
+    for(int i=1;i<=10;i++){  
+        System.out.println(i);  
+    }  
+}  
+}  
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/forloooooop.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+
+                       
+         <br><br>               
+  <b> Java Nested For Loop</b><br><br></p><br>
+
+If we have a for loop inside the another loop, it is known as nested for loop. The inner loop executes completely whenever outer loop executes. <br>
+
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {  
+public static void main(String[] args) {  
+//loop of i  
+for(int i=1;i<=3;i++){  
+//loop of j  
+for(int j=1;j<=3;j++){  
+        System.out.println(i+" "+j);  
+}//end of i  
+}//end of j  
+}  
+}  
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/nestedforloop.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+
+<br><br>               
+  <b> Java for-each Loop</b><br><br></p><br>
+
+The for-each loop is used to traverse array or collection in java.<br> It is easier to use than simple for loop because we don't need to increment value and use subscript notation.<br>
+
+It works on elements basis not index. It returns element one by one in the defined variable <br>
+
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {  
+public static void main(String[] args) {  
+    //Declaring an array  
+    int arr[]={12,23,44,56,78};  
+    //Printing array using for-each loop  
+    for(int i:arr){  
+        System.out.println(i);  
+    }  
+}  
+}  
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/foreach.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+                        <br><br>               
+  <b> Infinitive For Loop</b><br><br></p><br>
+
+If you use two semicolons ;; in the for loop, it will be infinitive for loop.<br>
+
+
+
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class ForExample {  
+public static void main(String[] args) {  
+    //Using no condition in for loop  
+    for(;;){  
+        System.out.println("infinitive loop");  
+    }  
+}  
+} 
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/foreach.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+                        <form action="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%201.html?">           
+<button class="button" scr="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%201.html?">&laquo;Previous</button></form>
+  <form action="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%203.html">
+<button class="hey" scr="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%203.html">Next&raquo;</button>
+<style>
+	
+
+
+	
+	*
+{
+
+    padding: 0px;
+    margin: 0px;
+     
+}
+
+body
+{
+    background: white;
+}
+h1{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 90px 40px 20px 40px;
+  clear: both;
+
+	}
+	h2{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 40px 40px 20px 40px;
+  clear: both;
+
+	}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  
+  margin: 5px;
+}
+
+.button span {
+  
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+
+
+
+.hey {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+ 
+  margin: 5px;
+}
+
+
+
+.hey span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hey span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hey:hover span {
+  padding-right: 25px;
+}
+
+.hey:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.hey:hover {
+  background-color: blue;
+  color: white;
+}
+</style>
+
+</style>

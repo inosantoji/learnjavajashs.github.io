@@ -1,0 +1,57 @@
+header {
+    height:650px;
+    background: black;
+	background-size: cover;
+	background-repeat: round;
+	margin: -10px;
+	position: relative;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+
+	margin: 90px 40px 20px 40px;
+	clear: both;
+}
+
+span {
+	display: inline-block;
+	margin-top: 200px;
+	
+	padding: 2px 5px 2px 5px;
+	
+}
+.Quote {
+	line-height: 4px;
+	text-align: center;
+	font-size:18px;
+	 font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: rgba(255,36,0,0.5);
+	letter-spacing: 0.05em;
+
+}
+.button {
+	color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+	background: rgba(255,36,0,0.5);
+	font-weight: 100; 
+	padding: 8px;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 20px;
+	
+}
+
+
+.button:hover{
+	background:#1F456E;
+	color: white;
+}

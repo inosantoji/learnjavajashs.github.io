@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>control statements</title>
+ <link rel="stylesheet" href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="menu">
+<ul>
+
+<li class="active"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.html#"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/vision.html">Vision</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/mission.html">Mission</a></li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="#"><i class="fa fa-clone"></i>Lesson</a>
+<div class="sub-menu-1">  
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/introduction.html">Introduction</a></li>
+<li class="hover-me"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/fundamental.html">Fundamentals</a> <i class="fa fa-angle-right"></i>
+
+<div class="sub-menu-2">
+  <ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">Control Statements</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/array.html">Array</a></li>
+
+</ul>
+</div>
+
+</li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/quiz.html"><i class="fa fa-edit"></i>Quiz</a>
+<div class="sub-menu-1">  
+
+</div></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/contact.html"><i class="fa fa-address-card-o"></i>Contact</a></li>
+</ul>
+</div>
+
+</style>
+
+</body>
+</html>
+
+<h1> <b>Java Control Statements
+<br><br>A control statement is a statement that determines whether other statements will be executed.</h1></b><br>
+
+  <br><br>
+  <h2><b><p style=" background: white; color: black; padding: 1px; margin-left: 20px; margin-top: 20px;margin-right: 20px;
+  ">Java Continue Statement</b><br><br></p><br>
+The continue statement is used in loop control structure when you need to jump to the next iteration of the loop immediately. It can be used with for loop or while loop.<br>
+
+The Java continue statement is used to continue the loop. It continues the current flow of the program and skips the remaining code at the specified condition. In case of an inner loop, it continues the inner loop only.<br>
+
+We can use Java continue statement in all types of loops such as for loop, while loop and do-while loop.<br>
+
+<br><br> <b>Example:</b><br>
+<div class="code-group">  
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main
+public static void main(String[] args) {  
+    //for loop  
+    for(int i=1;i<=8;i++){  
+        if(i==5){  
+            //using continue statement  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+    }  
+}  
+}  
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/cont.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                        </div>
+                        </iframe></div>
+
+<br><br>
+<b>Continue Statement with Inner Loop</b><br><br>
+It continues inner loop only if you use the continue statement inside the inner loop.
+<br><br> <b>Example:</b><br>
+<div class="code-group">  
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main
+public static void main(String[] args) {  
+            //outer loop  
+            for(int i=1;i<=3;i++){    
+                    //inner loop  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using continue statement inside inner loop  
+                            continue;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}    
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/wit.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                        </div>
+                        </iframe></div>
+
+<br><br>
+<b> Continue Statement with Labeled For Loop
+</b><br><br>
+We can use continute statement with a label. This feature is introduced since JDK 1.5. So, we can continue any loop in Java now whether it is outer loop or inner.<br>
+<br>
+<br><br> <b>Example:</b><br>
+<div class="code-group">  
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {  
+public static void main(String[] args) {  
+            aa:  
+            for(int i=1;i<=3;i++){    
+                    bb:  
+                    for(int j=1;j<=3;j++){    
+                        if(i==2&&j==2){    
+                            //using continue statement with label  
+                            continue aa;    
+                        }    
+                        System.out.println(i+" "+j);    
+                    }    
+            }    
+}  
+}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/huuuuuuuu.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                        </div>
+                        </iframe></div>
+
+<br><br>
+<b>Continue Statement in while loop
+</b>
+<br>
+<br><br> <b>Example:</b><br>
+<div class="code-group">  
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {  
+public static void main(String[] args) {  
+    //while loop  
+    int i=1;  
+    while(i<=10){  
+        if(i==5){  
+            //using continue statement  
+            i++;  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+        i++;  
+    }  
+}  
+}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/forloooooop.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                        </div>
+                        </iframe></div>
+<br><br>
+<b> Continue Statement in do-while loop
+
+</b>
+
+<br><br> <b>Example:</b><br>
+<div class="code-group">  
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {  
+public static void main(String[] args) {  
+    //declaring variable  
+    int i=1;  
+    //do-while loop  
+    do{  
+        if(i==5){  
+                //using continue statement  
+                 i++;  
+            continue;//it will skip the rest statement  
+        }  
+        System.out.println(i);  
+        i++;  
+    }while(i<=10);  
+}  
+}   
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/forloooooop.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                        </div>
+                        </iframe></div>
+
+                          <form action="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%204.html?">
+<button class="button" scr="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%204.html?">&laquo;Previous</button>
+
+</form>
+                   
+<style>
+  
+  *
+{
+    padding: 0;
+    margin: 0;
+     
+}
+
+body
+{
+    background: black;
+   
+ 
+
+  }
+  h1{
+
+      text-align: center;
+    background: #1F456E;
+        font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 90px 40px 20px 40px;
+  clear: both;
+
+  }
+  h2{
+
+      text-align: center;
+    background: #1F456E;
+        font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 40px 40px 20px 40px;
+  clear: both;
+
+  }
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+.hey {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+ 
+  margin: 5px;
+}
+
+
+
+.hey span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hey span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hey:hover span {
+  padding-right: 25px;
+}
+
+.hey:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.hey:hover {
+  background-color: blue;
+  color: white;
+}
+</style>

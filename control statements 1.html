@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>control statements</title>
+  <link rel="stylesheet" href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="menu">
+<ul>
+
+<li class="active"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.html#"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/vision.html">Vision</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/mission.html">Mission</a></li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="#"><i class="fa fa-clone"></i>Lesson</a>
+<div class="sub-menu-1">  
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/introduction.html">Introduction</a></li>
+<li class="hover-me"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/fundamental.html">Fundamentals</a> <i class="fa fa-angle-right"></i>
+
+<div class="sub-menu-2">
+	<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">Control Statements</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/array.html">Array</a></li>
+
+</ul>
+</div>
+
+</li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/quiz.html"><i class="fa fa-edit"></i>Quiz</a>
+<div class="sub-menu-1">  
+
+</div></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/contact.html"><i class="fa fa-address-card-o"></i>Contact</a></li>
+</ul>
+</div>
+
+</style>
+
+</body>
+</html>
+
+<h1> <b>Java Control Statements
+<br><br>A control statement is a statement that determines whether other statements will be executed.</h1></b><br>
+
+	<br><br>
+	<h2><b><p style=" background: white; color: black; padding: 1px; margin-left: 20px; margin-top: 20px;margin-right: 20px;
+  ">Java Switch Statement</b><br><br></p><br>
+The Java switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement. <br>
+
+<br><b>Points to Remember:</b><br><br>
+1.There can be one or N number of case values for a switch expression.<br><br>
+1.The case value must be of switch expression type only. The case value must be literal or constant.<br><br> 3.It doesn't allow variables.
+4.The case values must be unique. In case of duplicate value, it renders compile-time error.<br><br>
+5.The Java switch expression must be of byte, short, int, long (with its Wrapper type), enums and string.<br><br>
+6.Each case statement can have a break statement which is optional. When control reaches to the break statement, it jumps the control after the switch expression.<br><br> 7.If a break statement is not found, it executes the next case.
+The case value can have a default label which is optional.<br><br>
+
+<img src="file:///C:/Users/PC%20Boss/Pictures/cswitch.png">
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class SwitchExample {  
+public static void main(String[] args) {  
+    //Declaring a variable for switch expression  
+    int number=20;  
+    //Switch expression  
+    switch(number){  
+    //Case statements  
+    case 10: System.out.println("10");  
+    break;  
+    case 20: System.out.println("20");  
+    break;  
+    case 30: System.out.println("30");  
+    break;  
+    //Default case statement  
+    default:System.out.println("Not in 10, 20 or 30");  
+    }  
+}  
+}   
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/switch.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+<br><br>
+<b>Java Switch Statement with String</b><br><br>
+Java allows us to use strings in switch expression since Java SE 7. The switch statement when used with a String uses the equals() method to compare the given expression to each value in the case statement and is therefore case-sensitive and will throw a NullPointerException if the expression is null <br>
+<br>
+<br><br> <b>Example:</b><br>
+<div class="code-group">	
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class SwitchExample {  
+public static void main(String[] args) {  
+    //Declaring a variable for switch expression  
+    int number=20;  
+    //Switch expression  
+    switch(number){  
+    //Case statements  
+    case 10: System.out.println("10");  
+    break;  
+    case 20: System.out.println("20");  
+    break;  
+    case 30: System.out.println("30");  
+    break;  
+    //Default case statement  
+    default:System.out.println("Not in 10, 20 or 30");  
+    }  
+}  
+}   
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/with%20string.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+                    .window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                        </div>
+                        </iframe></div>
+
+<b>Java Nested Switch Statement</b><br>
+A nested switch statement is a switch statement within another switch statement. <br>
+<br>
+<br><br> <b><strong>Example:</strong></b><br>
+<div class="code-group">	
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {    
+    public static void main(String args[])  
+      {  
+      //C - CSE, E - ECE, M - Mechanical  
+        char branch = 'C';                 
+        int collegeYear = 4;  
+        switch( collegeYear )  
+        {  
+            case 1:  
+                System.out.println("English, Maths, Science");  
+                break;  
+            case 2:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Operating System, Java, Data Structure");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Micro processors, Logic switching theory");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Drawing, Manufacturing Machines");  
+                        break;  
+                }  
+                break;  
+            case 3:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Computer Organization, MultiMedia");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Fundamentals of Logic Design, Microelectronics");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Internal Combustion Engines, Mechanical Vibration");  
+                        break;  
+                }  
+                break;  
+            case 4:  
+                switch( branch )   
+                {  
+                    case 'C':  
+                        System.out.println("Data Communication and Networks, MultiMedia");  
+                        break;  
+                    case 'E':  
+                        System.out.println("Embedded System, Image Processing");  
+                        break;  
+                    case 'M':  
+                        System.out.println("Production Technology, Thermal Engineering");  
+                        break;  
+                }  
+                break;  
+        }  
+    }  
+}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/switch%20nested.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 50%; height: 50px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div><br><br>
+                        <b> Wrapper in Switch Statement</b><br>
+Java allows us to use four wrapper classes: Byte, Short, Integer and Long in switch statement. <br>
+<br>
+<br><br> <b><strong>Example:</strong></b><br>
+<div class="code-group">	
+                   
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+public class Main {          
+       public static void main(String args[])  
+       {         
+            Integer age = 18;        
+            switch (age)  
+            {  
+                case (16):            
+                    System.out.println("You are under 18.");  
+                    break;  
+                case (18):                
+                    System.out.println("You are eligible for vote.");  
+                    break;  
+                case (65):                
+                    System.out.println("You are senior citizen.");  
+                    break;  
+                default:  
+                    System.out.println("Please give the valid age.");  
+                    break;  
+            }             
+        }  
+}  
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/new.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 50%; height: 50px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+                          <form action="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">
+<button class="button" scr="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">&laquo;Previous</button>
+
+</form>
+  <form action="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%202.html">
+<button class="hey" scr="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements%202.html">Next&raquo;</button>
+
+          </form>                     
+<style>
+	
+	*
+{
+    padding: 0;
+    margin: 0;
+     
+}
+
+body
+{
+    background: black;
+   
+ 
+
+  }
+	h1{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 90px 40px 20px 40px;
+  clear: both;
+
+	}
+	h2{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 40px 40px 20px 40px;
+  clear: both;
+
+	}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+.hey {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+ 
+  margin: 5px;
+}
+
+
+
+.hey span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hey span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.hey:hover span {
+  padding-right: 25px;
+}
+
+.hey:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.hey:hover {
+  background-color: blue;
+  color: white;
+}
+</style>

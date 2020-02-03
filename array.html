@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array</title>
+  <link rel="stylesheet" href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="menu">
+<ul>
+
+<li class="active"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/home.html#"><i class="fa fa-home"></i>Home</a></li>
+<li><a href="#"><i class="fa fa-user"></i>About Us</a>
+<div class="sub-menu-1">
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/vision.html">Vision</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/mission.html">Mission</a></li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="#"><i class="fa fa-clone"></i>Lesson</a>
+<div class="sub-menu-1">  
+<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/introduction.html">Introduction</a></li>
+<li class="hover-me"><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/fundamental.html">Fundamentals</a> <i class="fa fa-angle-right"></i>
+
+<div class="sub-menu-2">
+	<ul>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/control%20statements.html">Control Statements</a></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/array.html">Array</a></li>
+
+</ul>
+</div>
+
+</li>
+
+</ul>
+</div>
+</li>
+
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/quiz.html"><i class="fa fa-edit"></i>Quiz</a>
+<div class="sub-menu-1">  
+
+</div></li>
+<li><a href="file:///C:/Users/PC%20Boss/Documents/official%20website/contact.html"><i class="fa fa-address-card-o"></i>Contact</a></li>
+</ul>
+</div>
+
+</style>
+
+</body>
+</html>
+
+<h1> <b><p style="background: white; color: black; padding: 1px; margin-left: 20px; margin-top: 20px;margin-right: 20px;">Java Arrays</p></b>
+<br><br>Java array is an object which contains elements of a similar data type. <br><br>
+Additionally, The elements of an array are stored in a contiguous memory location.<br> <br>It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.<br>
+<br>Unlike C/C++, we can get the length of the array using the length member.<br> <br>In C/C++, we need to use the sizeof operator.<br>
+<br>
+In Java, array is an object of a dynamically generated class.<br><br> Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces.<br><br> We can store primitive values or objects in an array in Java.<br><br> Like C/C++, we can also create single dimentional or multidimentional arrays in Java.<br><br>
+
+Moreover, Java provides the feature of anonymous arrays which is not available in C/C++.<br><br>
+<img src="file:///C:/Users/PC%20Boss/Pictures/array.gif"><br>
+
+<br>
+<b><p style="background: white; color: black; border: 1px solid red; padding: 0px; margin-left: 5px; margin-top: 5px;margin-right: 5px;"> Advantages</b><br><br></p>
+<b>Code Optimization:</b> <br><br>
+It makes the code optimized, we can retrieve or sort the data efficiently.<br><br>
+<b>Random access:</b><br><br> We can get any data located at an index position.<br><br>
+<b><p style="background: white; border: 1px solid red;color: black; padding: 0px; margin-left: 5px; margin-top: 5px;margin-right: 5px;">Disadvantages</b><br><br></p>
+<b>Size Limit:</b><br><br> We can store only the fixed size of elements in the array.<br><br> It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.<br><br>
+Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on.</h1></b><br>
+
+	<br><br>
+	<h2><b><p style=" background: white; color: black; padding: 1px; margin-left: 20px; margin-top: 20px;margin-right: 20px;
+  ">Java Array</b><br><br></p><br>
+<br>
+Let's see the simple example of java array, where we are going to declare, instantiate, initialize and traverse an array.
+
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">	
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50">   
+class Main{  
+public static void main(String args[]){  
+int a[]=new int[5];//declaration and instantiation  
+a[0]=10;//initialization  
+a[1]=20;  
+a[2]=70;  
+a[3]=40;  
+a[4]=50;  
+//traversing array  
+for(int i=0;i<a.length;i++)//length is the property of array  
+System.out.println(a[i]);  
+}}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/ar.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+														
+                            
+                        </div>
+                        </iframe></div></div>
+<br><br>
+<b>
+Declaration, Instantiation and Initialization of Java Array</b><br>
+<br>
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main{  
+  
+public static void main(String args[]){  
+int a[]={33,3,4,5};//declaration, instantiation and initialization  
+//printing array  
+for(int i=0;i<a.length;i++)//length is the property of array  
+System.out.println(a[i]);  
+}}   
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/in.PNG" style="position: center;"  name="result1"frameborder="50" border="20" cellspacing="20"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div>
+
+
+<br><br>
+<b>
+For-each Loop for Java Array</b><br><br>
+We can also print the Java array using for-each loop. The Java for-each loop prints the array elements one by one. It holds an array element in a variable, then executes the body of the loop.<br><br>
+
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main{  
+  
+public static void main(String args[]){  
+int arr[]={33,3,4,5};  
+//printing array using for-each loop  
+for(int i:arr)  
+System.out.println(i);  
+}} 
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/in.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div>
+
+<br><br>
+<b>  
+Passing Array to a Method in Java</b><br>
+We can pass the java array to method so that we can reuse the same logic on any array.<br><br>
+
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main{  
+  
+//creating a method which receives an array as a parameter  
+static void min(int arr[]){  
+int min=arr[0];  
+for(int i=1;i<arr.length;i++)  
+ if(min>arr[i])  
+  min=arr[i];  
+  
+System.out.println(min);  
+}  
+  
+public static void main(String args[]){  
+int a[]={33,3,4,5};//declaring and initializing an array  
+min(a);//passing array to method  
+}}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/3.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div> 
+
+                        <br><br>
+<b>  
+Returning Array from the Method</b><br>
+<br>
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main{  
+  
+//creating method which returns an array  
+static int[] get(){  
+return new int[]{10,30,50,90,60};  
+}  
+  
+public static void main(String args[]){  
+//calling method which returns an array  
+int arr[]=get();  
+//printing the values of an array  
+for(int i=0;i<arr.length;i++)  
+System.out.println(arr[i]);  
+}}   
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/ey.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div>          
+
+
+                        <br><br>
+<b>  
+Multidimensional Array in Java</b><br>
+In such case, data is stored in row and column based index also called matrix form.
+<br>
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main {
+public static void main(String args[]){  
+//declaring and initializing 2D array  
+int arr[][]={{1,2,3},{2,4,5},{4,4,5}};  
+//printing 2D array  
+for(int i=0;i<3;i++){  
+ for(int j=0;j<3;j++){  
+   System.out.print(arr[i][j]+" ");  
+ }  
+ System.out.println();  
+}  
+}}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/mul.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div> 
+
+         <br><br>
+<b>  
+Copying a Java Array</b><br>
+We can copy an array to another by the arraycopy() method of System class.
+
+<br><br> <b>Example:</b><br><br>
+<div class="code-group">  
+                    
+                        
+                        
+                        <div class="code-pane">
+
+                            <textarea name="codeUpdate" class="code-inputter" id="example1" autocomplete="off" spellcheck="false" rows="15" cols="50"> 
+class Main {
+public static void main(String[] args) {  
+        //declaring a source array  
+        char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',  
+                'i', 'n', 'a', 't', 'e', 'd' };  
+        //declaring a destination array  
+        char[] copyTo = new char[7];  
+        //copying array using System.arraycopy() method  
+        System.arraycopy(copyFrom, 2, copyTo, 0, 7);  
+        //printing the destination array  
+        System.out.println(String.valueOf(copyTo));  
+    }  
+}  
+
+</textarea></div>
+<b>output</b>
+<div class="result-pane">
+
+                            
+
+                                <iframe class="result" src="file:///C:/Users/PC%20Boss/Pictures/cafe.PNG" style="position: center;"  name="result1"frameborder="0" border="0" cellspacing="0"
+        style="border-style: none;width: 100%; height: 140px;> </iframe>
+
+                                
+                                <script>
+.                         window.document.forms["formEditor1"].submit();
+                                </script>
+                            
+                            
+                        </div>
+                        </iframe></div></div> 
+
+<style>
+	
+	*
+{
+    padding: 0;
+    margin: 0;
+     
+}
+
+body
+{
+    background:black;
+   
+ 
+
+  }
+	h1{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 90px 40px 20px 40px;
+  clear: both;
+
+	}
+	h2{
+
+		  text-align: center;
+    background: #1F456E;
+        font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+   border: 5px solid red;
+  margin: 40px 40px 20px 40px;
+  clear: both;
+
+	}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:hover {
+  background-color: blue;
+  color: white;
+}
+
+</style>
